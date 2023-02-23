@@ -1,0 +1,148 @@
+#container-seccion1
+    display: flex
+    z-index: 1
+    & .image
+        & img
+            height: 275px
+    & .bloque-texto
+        text-align: initial
+        font-size: 30px
+
+.container
+    width: 80%
+    position: absolute
+    right: 0
+    top: 0
+
+#logo-container
+    display: flex
+    justify-content: center
+    align-items: center
+    & img
+        height: 45px
+
+
+
+#caja-habilidad
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    & li
+        list-style: none
+        margin: 20px 0
+        padding: 10px
+        & .barra-progreso
+            background-color: #ecebeb
+            display: block
+            height: 20px
+            overflow: hidden
+            border-radius: 10px
+            transition: all  3s
+            & span
+                height: 20px
+                float: left
+                background-color: #4FC3DC
+                
+            & .html
+                width: 90%
+                animation: html 3s
+            & .css
+                width: 70%
+                animation: css 3s
+            & .tailwind
+                width: 70%
+                animation: tailwind 3s
+            & .wordpress
+                width: 60%
+                animation: wordpress 3s
+            & .git
+                width: 60%
+                animation: html 3s
+            & .github
+                width: 70%
+                animation: github 3s
+            & .javascript
+                width: 50%
+                animation: javascript 3s
+            & .sass
+                width: 90%
+                animation: sass 3s
+            & .seguridad
+                width: 60%
+                animation: seguridad 3s
+            & .marketing
+                width: 50%
+                animation: marketing 3s
+            & .ingles
+                width: 50%
+                animation: marketing 3s
+
+
+@keyframes html
+    0%
+        width: 0%
+    100%
+        width: 90%
+
+@keyframes tailwind
+    0%
+        width: 0%
+    100%
+        width: 70%
+
+@keyframes ingles
+    0%
+        width: 0%
+    100%
+        width: 50%
+
+@keyframes git
+    0%
+        width: 0%
+    100%
+        width: 60%
+
+@keyframes css
+    0%
+        width: 0%
+    100%
+        width: 70%
+
+@keyframes wordpress
+    0%
+        width: 0%
+    100%
+        width: 90%
+        
+@keyframes github
+    0%
+        width: 0%
+    100%
+        width: 70%
+        
+@keyframes javascript
+    0%
+        width: 0%
+    100%
+        width: 50%
+        
+@keyframes marketing
+    0%
+        width: 0%
+    100%
+        width: 50%
+        
+@keyframes sass
+    0%
+        width: 0%
+    100%
+        width: 90%
+        
+@keyframes seguridad
+    0%
+        width: 0%
+    100%
+        width: 60%
+
+
+

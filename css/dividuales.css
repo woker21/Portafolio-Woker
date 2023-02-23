@@ -1,0 +1,184 @@
+#container-seccion1 {
+  display: flex;
+  z-index: 1;
+}
+#container-seccion1 .image img {
+  height: 275px;
+}
+#container-seccion1 .bloque-texto {
+  text-align: initial;
+  font-size: 30px;
+}
+
+.container {
+  width: 80%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#logo-container img {
+  height: 45px;
+}
+
+#caja-habilidad {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+#caja-habilidad li {
+  list-style: none;
+  margin: 20px 0;
+  padding: 10px;
+}
+#caja-habilidad li .barra-progreso {
+  background-color: #ecebeb;
+  display: block;
+  height: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 3s;
+}
+#caja-habilidad li .barra-progreso span {
+  height: 20px;
+  float: left;
+  background-color: #4FC3DC;
+}
+#caja-habilidad li .barra-progreso .html {
+  width: 90%;
+  animation: html 3s;
+}
+#caja-habilidad li .barra-progreso .css {
+  width: 70%;
+  animation: css 3s;
+}
+#caja-habilidad li .barra-progreso .tailwind {
+  width: 70%;
+  animation: tailwind 3s;
+}
+#caja-habilidad li .barra-progreso .wordpress {
+  width: 60%;
+  animation: wordpress 3s;
+}
+#caja-habilidad li .barra-progreso .git {
+  width: 60%;
+  animation: html 3s;
+}
+#caja-habilidad li .barra-progreso .github {
+  width: 70%;
+  animation: github 3s;
+}
+#caja-habilidad li .barra-progreso .javascript {
+  width: 50%;
+  animation: javascript 3s;
+}
+#caja-habilidad li .barra-progreso .sass {
+  width: 90%;
+  animation: sass 3s;
+}
+#caja-habilidad li .barra-progreso .seguridad {
+  width: 60%;
+  animation: seguridad 3s;
+}
+#caja-habilidad li .barra-progreso .marketing {
+  width: 50%;
+  animation: marketing 3s;
+}
+#caja-habilidad li .barra-progreso .ingles {
+  width: 50%;
+  animation: marketing 3s;
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes tailwind {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes ingles {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes git {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes wordpress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes github {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes marketing {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes sass {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes seguridad {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}/*# sourceMappingURL=dividuales.css.map */
