@@ -152,6 +152,7 @@ body {
         margin-top: -0.95em;
         padding-bottom: 3.2em;
         width: 100%;
+        max-width: 768px;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         box-shadow: 0 0 8px black;
