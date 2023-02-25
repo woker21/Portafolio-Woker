@@ -296,7 +296,7 @@ body {
 
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:320px){
     .formulario .contacto .contacto__title{
         display: none;
     }
@@ -450,7 +450,7 @@ body {
     overflow: hidden;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:320px) {
     .mi-persona__img__container {
         width: 90%;
     }
@@ -472,7 +472,7 @@ body {
     left: 10%;
 }
 
-@media screen and (max-width:1020px) {
+@media screen and (max-width:320px) {
 
     .contacto {
         height: 610px;

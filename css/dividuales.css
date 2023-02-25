@@ -20,6 +20,13 @@
 }
 
 @media screen and (max-width:768px){
+  .habilidades-title{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width:320px){
   .container{
     width: 100%;
     margin: 0;
