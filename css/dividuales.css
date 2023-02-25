@@ -19,10 +19,20 @@
   z-index: 0;
 }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:768px){
   .container{
-    margin: auto;
+    width: 100%;
+    margin: 0;
   }
+
+  .habilidades-title{
+    display: none;
+  }
+
+  #container-seccion1 .image img {
+    height: 200px;
+  }
+
 }
 
 #logo-container {
