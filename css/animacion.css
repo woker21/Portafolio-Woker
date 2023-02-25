@@ -11,6 +11,16 @@ body{
     text-align: center;
 }
 
+@media screen and (max-width:768px){
+    .container-animacion{
+        max-width: 710px;
+    }
+
+    .burbujas{
+        max-width: 710px;
+    }
+}
+
 .burbujas{
     position: relative;
     display: flex;
