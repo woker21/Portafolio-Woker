@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/galeria.css">
   <link rel="stylesheet" href="css/estilos-formulario.css">
   <link rel="stylesheet" href="css/carga-animation.css">
-  <link rel="stylesheet" href="css/estilos-footer.css">
+  <link rel="stylesheet" href="css/footer.css">
       <!--animacion del footer-->
 
 </head>
@@ -27,9 +27,14 @@
   <!--Inicio de menu-->
   <nav class="navbar">
     <div id="logo-container" class="navbar__container">
-    <h2 class="navbar__title">SysWoker</h2>
-    <img src="images/logo.png" alt="">
-    <!--<h3 class="navbar__subtitle">Programador Web y Marketer</h3>-->
+      <span>
+        <img src="images/logo.png" alt="">
+      </span>
+      
+      <div class="nav__text">
+        <h2 class="navbar__title">SysWoker</h2>
+        <h3 class="navbar__subtitle">Web Developer</h3>
+      </div>
     </div>
 
 
@@ -66,8 +71,9 @@
           <h1 id="reloj">
             <span id="horas"></span>
             <span id="minutos"></span>
-        </h1>
+          </h1>
         </div>
+        
   </nav>
 <!--Fin de menu-->
 
@@ -119,19 +125,32 @@
     <div class="bloque-texto">
 
         <h1 class="inicio__title">Hola! <br>
-        Soy Richard! <br>
+        Soy Empress! <br>
         Y soy Programador Web</h1>
         <p class="inicio__subtitle">
         <span>Woker_Jn</span></p>
 
-        <button href="#portafolio" class="inicio__button">Leer Mas</button>
+        <div class="icons2">
+          <a class="icons__link" href="https://www.facebook.com/darianmorat" target="_blank">
+            <i class="icons__icons fab fa-facebook-square"></i>
+          </a>
+          <a class="icons__link" href="https://www.instagram.com/darianmorat" target="_blank">
+            <i class="icons__icons fab fa-instagram"></i>
+          </a>
+          <a class="icons__link" href="https://github.com/darianmorat" target="_blank">
+            <i class="icons__icons fab fa-github"></i>
+          </a>      
+          <a class="icons__link" href="https://www.linkedin.com/in/darianmorat" target="_blank">
+            <i class="icons__icons fab fa-linkedin"></i>
+          </a>
+        </div>
     </div>
 
     <div class="image">
         <img src="images/logo.png" alt="">
     </div>
 
-</div>
+  </div>
 
 
     </section>
@@ -255,8 +274,7 @@
 
 <!--Inicio de habilidades-->
     <section id="mi-persona" class="mi-persona">
-      <h1 style="color:#fff">Mis Habilidades</h1>
-
+      <div class="habilidades-title"><h1>Mis Habilidades</h1></div>
       <div id="caja-habilidad">
         <li>
           <h3>HTML</h3>
@@ -298,83 +316,78 @@
       </li>
   
       </div>
-
-
     </section>
 <!--Fin de habilidades-->
 
-<!--Inicio de contacto-->
-    <section id="contacto" class="contacto">
+<div  class="formulario">
 
-      <div class="contacto__title">
-        
-    <div id="carga-animacion">
-      <div id="cubo">
+  <section id="contacto" class="contacto">
+    <div class="contacto__title">
+      <div id="carga-animacion">
+        <div id="cubo">
           <span></span>
           <span></span>
           <span></span>
           <span></span>
           <span></span>
           <span></span>
-      </div>
-      <div class="loading">
+        </div>
+        <div class="loading">
           <h1>Esperando mensaje</h1><br>
           <p>. . . . .</p>
+        </div>
       </div>
-  </div>
+    </div>
 
+    <div class="login-box" >
+
+      <div id="carga-animacion2">
+        <div id="cubo">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
 
-
-<!--Inicio de seccion de registro-->
-
-<div class="login-box" >
-  <h2>Contactame</h2>
-
-  <form name="registro" id="registroForm">
-
-    <div class="user-box">
-      <input type="text" name="" id="nombre" required="">
-      <label>Nombre</label>
+      <h2>Contactame</h2>
+    
+      <form name="registro" id="registroForm">
+    
+        <div class="user-box">
+          <input type="text" name="" id="nombre" required="">
+          <label>Nombre</label>
+        </div>
+    
+        <div class="user-box">
+          <input type="email" placeholder="Correo Electronico" required="" id="correoElectronico" >
+          <label>Correo Electronico</label>
+        </div>
+        <div class="user-box">
+          <input type="number" required="" id="correoElectronico" >
+          <label>Telefono</label>
+        </div>
+    
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <input type="submit" id="enviarFormulario" value="Enviar">
+        </a>
+      </form>
     </div>
-
-    <div class="user-box">
-      <input type="email" placeholder="Correo Electronico" required="" id="correoElectronico" >
-      <label>Correo Electronico</label>
-    </div>
-    <div class="user-box">
-      <input type="number" required="" id="correoElectronico" >
-      <label>Telefono</label>
-    </div>
-
-    <a href="#">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <input type="submit" id="enviarFormulario" value="Enviar">
-    </a>
-
-  </form>
-
+  </section>
 
 </div>
 
-<!--Fin de registro -->
-
-
-
-
-      
-    </section>
-<!--Fin de contacto-->
 
 <footer>
 
   <!-- Inicio del footer -->
   <div id="footer">
-    <div class="contain">
-
     <div class="col">
       <h1>Nosotros</h1>
       <ul>
@@ -396,10 +409,7 @@
         <li>Open ticket</li>
       </ul>
     </div>
-
-
-  <div class="clearfix"></div>
-  </div>
+    <div class="clearfix"></div>
   </div>
   <!-- final del footer -->
 

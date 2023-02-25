@@ -12,9 +12,17 @@
 
 .container {
   width: 80%;
-  position: absolute;
+  position: sticky;
   right: 0;
+  float: right;
   top: 0;
+  z-index: 0;
+}
+
+@media screen and (max-width:1200px){
+  .container{
+    margin: auto;
+  }
 }
 
 #logo-container {
@@ -27,6 +35,8 @@
 }
 
 #caja-habilidad {
+  grid-row-start: 2;
+  margin-top: -300;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;

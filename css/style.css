@@ -67,13 +67,19 @@ body {
 .navbar__subtitle {
     color: var(--texto-bar);
     font-size: 15px;
-    text-align: right;
     margin: 0;
+    padding-top: 5px;
     padding-right: 30px;
 }
 
+.nav__text{
+    position: relative;
+    left: 7px;
+    text-align: center;
+}
+
 .navbar__list {
-    margin-top: 50px;
+    margin-top: 35px;
     list-style: none;
     padding: 0;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.500);
@@ -97,8 +103,8 @@ body {
 }
 
 .navbar__link:hover {
-    background-color: rgb(20, 20, 20);
-    color: var(--link-bar);
+    background-color: #131A2F;
+    color: white;
 }
 
 .icons {
@@ -106,6 +112,10 @@ body {
     padding: 25px 0;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.500);
     text-align: center;
+}
+
+.icons2 {
+    display: none;
 }
 
 .icons__link {
@@ -131,23 +141,27 @@ body {
     font-size: 33px;
 }
 
-@media screen and (max-width:870px) {
+@media screen and (max-width:768px) {
     body {
         display: grid;
         grid-template-columns: 1fr;
     }
 
     .navbar {
-        height: 115px;
+        height: 70px;
+        margin-top: -0.95em;
+        padding-bottom: 3.2em;
+        width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 60px 50px;
+        grid-template-columns: repeat(5, 1fr);
         box-shadow: 0 0 8px black;
-        z-index: 100;
+        z-index: 1;
     }
 
     .navbar__list {
-        grid-column: 1/3;
+        grid-column-start: 3;
+        padding-right: 100px;
+        grid-gap: 20px;
         grid-row: 1;
     }
 
@@ -170,13 +184,12 @@ body {
     }
 
     .navbar__title {
-        grid-column: 1/2;
-        grid-row: 2;
-        margin-left: 13px;
+        margin-left: 7px;
         font-size: 20px;
         padding-top: 4px;
         border-radius: 0 0 50px 50px;
         position:relative;
+        display: none;
         bottom: 30px;
     }
 
@@ -186,11 +199,15 @@ body {
         margin-top: 26px;
         font-size: 12px;
         position:relative;
+        display: none;
         bottom: 57px;
         left: -0.5px;
+
+        font-size: 0;
     }
 
     .navbar__list {
+        height: 100%;
         margin: 0px;
         list-style: none;
         padding: 0;
@@ -201,6 +218,7 @@ body {
     }
     
     .separa {
+        margin-right: 15px;
         padding-right: 5px;
     }
 
@@ -216,22 +234,31 @@ body {
         display: flex;
         justify-content: center;
         padding: 0 10px;
-        box-shadow: 0 0 1px 1px rgb(116, 116, 116);
     }
 
     .icons {
+        grid-column-start: 4;
         border-radius: 0 0 50px 50px;
         margin: 7px 30px 5px 0;
         text-align: right;
+        display: none;
         box-shadow: 0 0 0;
-
         margin-top: -15px;
         padding: 25px 0;
     
     }
+
+    .icons2 {
+        display: block;
+    }
     
     .puntos {
-        font-size: 0px;
+        grid-column-start: 5;
+        font-size: 0.5em;
+    }
+
+    .switch{
+        grid-column-start: ;
     }
 
     .inicio,
@@ -242,6 +269,60 @@ body {
         width: 100%;
     }
 }
+
+.formulario .contacto{
+    background-color: #0c192c;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 100vh;
+    text-align: center;
+    display: grid;
+    display: flex;
+    grid-gap: 70px;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 75px;
+}
+
+.formulario .contacto2{
+    background-color: #0c192c;
+    display: grid;
+    display: flex;
+    margin: 100px;
+    grid-gap: 70px;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+@media screen and (max-width:768px){
+    .formulario .contacto .contacto__title{
+        display: none;
+    }
+
+    .formulario .contacto .login-box #carga-animacion2{
+        display: block;
+    }
+
+    .formulario{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .formulario2{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .formulario .contacto__title{
+        grid-column: 1 / -1;
+    }
+
+    .formulario .login-box{
+        grid-column: 1 / -1;
+    }
+}
+
 
 .inicio {
     background-color: #0c192c;
@@ -286,6 +367,10 @@ body {
 .inicio__arrow {
     margin-top: 3px;
     text-shadow: 0 0 5px black;
+}
+
+.portafolio__title{
+    padding-top: 30px;
 }
 
 .portafolio__title,
@@ -364,7 +449,7 @@ body {
     overflow: hidden;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:768px) {
     .mi-persona__img__container {
         width: 90%;
     }
@@ -381,15 +466,8 @@ body {
     margin-top: 50px;
 }
 
-.contacto {
-    background-color: #0c192c;
-    min-height: 100vh;
-    text-align: center;
-}
-
 
 .contacto .contacto__title{
-    position: absolute;
     left: 10%;
 }
 

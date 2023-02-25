@@ -8,6 +8,12 @@
     height: 300px;
 }
 
+#carga-animacion2{
+    margin-top: 10px;
+    display: none;
+    height: 150px;
+}
+
 #cubo{
     height: 60%;
     transform-style: preserve-3d;
